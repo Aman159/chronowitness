@@ -1,30 +1,24 @@
-# ChronoWitness
+# ChronoWitness V2
 
-A dependency-free, source-led launch website combining history, geography, and space.
+Source-led history + geography + astronomy-context prototype.
 
-## Deploy to Vercel today
+## What's new
+- Redesigned cinematic responsive UI
+- Live interactive Leaflet map
+- Curated moment search and era filters
+- Evidence cards and institutional source links
+- Timeline navigation
+- Sky-context panel linking to Stellarium Web
+- Explicit separation between modern geography and historical claims
 
-### Fastest method
-1. Sign in to Vercel.
-2. Select **Add New > Project**.
-3. Upload or import this folder through a Git repository.
-4. Framework preset: **Other**.
-5. Build command: leave empty.
-6. Output directory: leave empty or use `.`.
-7. Deploy.
+## Deploy
+Replace the current repository `index.html` with this V2 `index.html`, then commit to `main`. Your connected Vercel project should create a new deployment from the Git push.
 
-### GitHub method
-1. Create a new repository.
-2. Upload `index.html` and `README.md`.
-3. Import that repository in Vercel.
-4. Framework preset: **Other**.
-5. Deploy.
+## Important map note
+The prototype uses the standard OpenStreetMap tile server with visible attribution. OSM states its tile service is best-effort and capacity is limited. Do not use it for heavy traffic or bulk tile downloading. Before scaling, move to a suitable OSM-derived provider or infrastructure that matches your traffic.
 
-## Accuracy policy
-- Exact dates are used only for documented events.
-- Ancient experiences use period labels when an exact day is not established.
-- Every experience links to NASA or UNESCO.
-- Visual scenes are CSS illustrations, not presented as historical evidence.
-
-## Hosting warning
-Vercel's Hobby plan is restricted to non-commercial personal use under its published fair-use terms. It is appropriate for a non-commercial prototype, but re-check hosting terms before monetizing.
+## Accuracy design
+- Exact dates only for documented events.
+- Period labels for ancient sites where an exact day is not established.
+- The interactive map is explicitly modern geographic context.
+- The prototype does not fabricate astronomical positions. The Sky Context view links to Stellarium Web until a native astronomical layer is independently verified.
