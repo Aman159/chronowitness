@@ -1,24 +1,23 @@
-# ChronoWitness V2
+# ChronoWitness V3 — Time Travel Experience
 
-Source-led history + geography + astronomy-context prototype.
+## New interaction model
+1. Choose a curated destination.
+2. Begin time travel.
+3. Watch the chronological transit animation.
+4. Arrive on the modern geographic map.
+5. Read the evidence dossier.
+6. Switch between THEN and NOW explanations.
+7. Inspect curated context for the selected moment.
 
-## What's new
-- Redesigned cinematic responsive UI
-- Live interactive Leaflet map
-- Curated moment search and era filters
-- Evidence cards and institutional source links
-- Timeline navigation
-- Sky-context panel linking to Stellarium Web
-- Explicit separation between modern geography and historical claims
+## Accuracy boundaries
+- Exact dates are used only for documented NASA events.
+- Ancient destinations use broad UNESCO-supported periods rather than fabricated dates.
+- The map is explicitly present-day geographic context.
+- Animation and visual effects are storytelling devices, not evidence.
+- Each journey provides a direct institutional source link.
 
 ## Deploy
-Replace the current repository `index.html` with this V2 `index.html`, then commit to `main`. Your connected Vercel project should create a new deployment from the Git push.
+Replace `index.html` and `README.md` in the GitHub repository, then commit to `main`. The connected Vercel project should redeploy automatically.
 
-## Important map note
-The prototype uses the standard OpenStreetMap tile server with visible attribution. OSM states its tile service is best-effort and capacity is limited. Do not use it for heavy traffic or bulk tile downloading. Before scaling, move to a suitable OSM-derived provider or infrastructure that matches your traffic.
-
-## Accuracy design
-- Exact dates only for documented events.
-- Period labels for ancient sites where an exact day is not established.
-- The interactive map is explicitly modern geographic context.
-- The prototype does not fabricate astronomical positions. The Sky Context view links to Stellarium Web until a native astronomical layer is independently verified.
+## Map usage
+This prototype uses Leaflet with the standard OpenStreetMap tile server and visible attribution. Before meaningful traffic or commercial use, review OpenStreetMap tile usage requirements and move to infrastructure appropriate for the site's traffic.
